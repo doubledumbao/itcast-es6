@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SET MAP</title>
+    <script>
+        let myset = new Set([2,4,7,9]);
+        myset.add(1);
+        myset.add(3);
+        myset.add(8);
+        myset.add(13);
+
+        myset.delete(8);
+        console.log(myset);
+        let arr = [4,9,19,27];
+        myset.add(arr);
+        console.log("---------------------------------");
+        let mymap = new Map();
+        mymap.set("id","123456");
+        mymap.set("name","zhangsan");
+        mymap.set("address","山东省");
+        mymap.forEach((value,key,map)=>{
+            console.log(key,"-",value)
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

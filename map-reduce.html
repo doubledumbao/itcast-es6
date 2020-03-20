@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map reduce</title>
+</head>
+<body>
+    <script>
+        let arr = [12,34,23,19,34];
+
+        arr.map((a) => console.log(a+1));
+
+        let sums = arr.reduce((a,b) => {
+            return a+b;
+        });
+        console.log(sums);
+
+    </script>
+</body>
+</html>

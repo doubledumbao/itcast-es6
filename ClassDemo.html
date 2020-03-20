@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class</title>
+
+    <script>
+        class User{
+            constructor(name,age=18) {
+                this.name = name;
+                this.age = age;
+            }
+            static isAdult(age){
+                if(age >= 18){
+                    return "成年人";
+                }
+                return  "未成年人";
+            }
+            sayHello(){
+                return "hello " + this.name;
+            }
+        }
+        let zhangsan = new User("zhangsan",20);
+        console.log(zhangsan);
+        console.log(zhangsan.sayHello());
+        console.log(User.isAdult(30));
+
+        class SubUser extends  User{
+            constructor(name,age,address="beijing") {
+                super(name,age);
+                this.address= address;
+            }
+            sayHi(){
+                return "hi,"+this.name;
+            }
+            where(){
+                return "address:"+this.address;
+            }
+        }
+        let lisi = new SubUser("lisi",49);
+        console.log(lisi.sayHi());
+        console.log(lisi.where());
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

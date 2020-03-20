@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generator</title>
+    <script>
+        function* hello(){
+            yield  "hello";
+            yield  "world";
+            yield  "javascript";
+            return "done";
+        }
+        let h = hello();
+        // console.log(h.next());
+        // console.log(h.next());
+        for (let hh of h){
+            console.log(hh);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
